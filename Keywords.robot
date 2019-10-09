@@ -36,15 +36,16 @@ SCB Easy App SIT
     Clear Text                   ${Login_parth}
     Input Password               ${Login_parth}          ${User_data}
     Click Element                ${Confirm}
-    Sleep    2s
+    Sleep    5s
     Click Element                ${Close}
-    Sleep    3s
+    Sleep    5s
     Click Element                ${Close_Two}
+    Sleep    3s
     # : FOR    ${INDEX}    IN RANGE    1    14
     # \         Click Element          ${Close_Two}
-    Sleep      2s
+    Sleep      3s
     Click Element    ${Product 12/4_Index}
-    Sleep      2s
+    Sleep      3s
     Click Element    ${Product 12/4_Home}
     Sleep      5s
     Click Element    ${PIN_ONE}
@@ -55,12 +56,19 @@ SCB Easy App SIT
     Click Element    ${PIN_Tree}
 
 Product Landing Page
-    Sleep    15s
-    Swipe      45     1108      1035     1273    1000
-    Click Element                          ${Button Continue}
+    Sleep    10s
+    Swipe      200    2000    100    0
+    Click Element             ${Button Continue_Locator}
+    Click Element             ${Sslect Consent_Locator}
+    Click Element             ${Confirm_Locator}
 Calculate Page
-
+     Sleep    2s
+     Click Element            ${Increase_Locator}
+     Swipe      200    1000    100    0
+     Click Element            ${Button Continue_Locator}
 Payment Mode Page
+     Sleep    2s
+     Click Element            ${Quarterly_Locator}
 
 Personal Info Page
 
@@ -71,4 +79,6 @@ Cash Back Page
 FATCA Page
 
 Review Page
-#Close Browser
+
+Close
+     Close Application
