@@ -7,3 +7,6 @@ Resource    Locators_MicrositeIL.robot
 Open App
     SCB Easy App SIT
     Product Landing Page
+    Calculate Page
+    Payment Mode Page
+    Close
