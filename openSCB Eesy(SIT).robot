@@ -9,4 +9,7 @@ Open App
     Product Landing Page
     Calculate Page
     Payment Mode Page
-    Close
+    Personal Info Page
+    Beneficiary Page
+    Cash Back Page
+    Close 

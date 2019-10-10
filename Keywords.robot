@@ -47,7 +47,7 @@ SCB Easy App SIT
     Click Element    ${Product 12/4_Index}
     Sleep      3s
     Click Element    ${Product 12/4_Home}
-    Sleep      5s
+    Wait Until Element Is Visible       ${PIN_ONE}
     Click Element    ${PIN_ONE}
     Click Element    ${PIN_ONE}
     Click Element    ${PIN_TWO}
@@ -58,23 +58,38 @@ SCB Easy App SIT
 Product Landing Page
     Sleep    10s
     Swipe      200    2000    100    0
+    Wait Until Element Is Visible         ${Button Continue_Locator}
     Click Element             ${Button Continue_Locator}
-    Click Element             ${Sslect Consent_Locator}
+    Sleep    1s
+    Click Element             ${Select Consent_Locator}
+    Sleep    1s
     Click Element             ${Confirm_Locator}
 Calculate Page
-     Sleep    2s
-     Click Element            ${Increase_Locator}
-     Swipe      200    1000    100    0
+     Sleep    3s
+     : FOR    ${INDEX}    IN RANGE    1    4
+      \         Click Element          ${Increase_Locator}
+     Swipe      200    1300    100    0
      Click Element            ${Button Continue_Locator}
 Payment Mode Page
-     Sleep    2s
+     Sleep    5s
      Click Element            ${Quarterly_Locator}
+     Click Element            ${Button Continue_Locator}
 
 Personal Info Page
-
+    Sleep    5s
+    Swipe      200    2000    100    0
+    Swipe      200    1500    100    0
+    Click Element            ${Button Continue_Locator}
 Beneficiary Page
-
+    Wait Until Element Is Visible         ${Beneficiary}
+    Click Element            ${Beneficiary}
+    Sleep    2s
+    Click Element            ${[father]}
+    Input Text               ${Percent}              ${Percent_100}
+    Input Text               ${FullName}             ${FullName1}
+    Click Element            ${Button Continue_Locator}
 Cash Back Page
+    Sleep    2s
 
 FATCA Page
 

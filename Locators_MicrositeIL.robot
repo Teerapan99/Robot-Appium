@@ -9,7 +9,7 @@ Resource          Keywords.robot
 *** Variables ***
 #Login
 ${Login_parth}                     xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/TextInputLayout[1]/android.widget.FrameLayout/android.widget.EditText
-${User_data}                       Scbonesit01
+${User_data}                       sit_scblife08
 ${Confirm}                         xpath=//android.widget.TextView[@text="Confirm"]
 ${Close}                           xpath=//android.widget.ImageView[@index="2"]
 ${Close_Two}                       xpath=//android.widget.ImageView[@resource-id='com.scb.phone_sit_cr:id/skip_lifestyle_tutorial_image_view']
@@ -22,9 +22,9 @@ ${PIN_Tree}                        xpath=//hierarchy/android.widget.FrameLayout/
 #Button Continue
 ${Button Continue_Locator}                 xpath=//android.widget.Button[@resource-id='btnNext']
 #Product Landing Page
+${Select Consent_Locator}                  xpath=//android.view.View[@index='4']
+${Confirm_Locator}                         xpath=//android.widget.Button[@resource-id='btnConfirm']
 
-${Sslect Consent_Locator}                  xpath=//android.view.View[@index='2']
-${Confirm_Locator}                         xpath=//android.view.View[@index='4']
 
 # Calculate Page
 ${Increase_Locator}                         xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View[2]/android.widget.Image
@@ -32,27 +32,28 @@ ${decrease_Locator}                         xpath=//hierarchy/android.widget.Fra
 
 
 # Payment Mode Page
-${Annual_Locator}                           xpath=//android.view.View[@text='Annual']
-${Bi-annual_Locator}                        xpath=//android.view.View[@text='Bi-annual']
-${Quarterly_Locator}                        xpath=//android.view.View[@text='Quarterly']
-${Monthly_Locator}                          xpath=//android.view.View[@text='Monthly']
+${Annual_Locator}                           xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View/android.view.View[1]
+${Bi-annual_Locator}                        xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[4]/android.view.View/android.view.View[1]
+${Quarterly_Locator}                        xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[5]/android.view.View/android.view.View[1]
+${Monthly_Locator}                          xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[6]/android.view.View/android.view.View[1]
+
 
 # Personal Info Page
 ${Prefix}                                   xpath=
-${Mobile_Phone}                             xpath=
-${Email}                                    xpath=
+${Mobile_Phone}                             xpath=//android.widget.Button[@resource-id='InsuredMobileNo']
+${Email}                                    xpath=//android.widget.Button[@resource-id='InsuredEmail']
 ${Monthly_income}                           xpath=
-${Number}                                   xpath=
-${Moo}                                      xpath=
-${Village}                                  xpath=
-${Soi}                                      xpath=
-${Road}                                     xpath=
+${Number}                                   xpath=//android.widget.Button[@resource-id='InsuredAddressNo']
+${Moo}                                      xpath=//android.widget.Button[@resource-id='InsuredAddressMoo']
+${Village}                                  xpath=//android.widget.Button[@resource-id='InsuredAddressVillageName']
+${Soi}                                      xpath=//android.widget.Button[@resource-id='InsuredAddressSoi']
+${Road}                                     xpath=//android.widget.Button[@resource-id='InsuredAddressStreet']
 ${Provinec}                                 xpath=
 ${District}                                 xpath=
 ${SubDistrict}                              xpath=
-${Zip_Code}                                 xpath=
-${House_Address_Use}                        xpath=
-${House_Address_Others}                     xpath=
+${Zip_Code}                                 xpath=//android.widget.Button[@resource-id='InsuredAddressPostalCode']
+${House_Address_Use}                        xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[6]/android.view.View
+${House_Address_Others}                     xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[7]/android.view.View
 ${House_Address_Number}                     xpath=
 ${House_Address_Moo}                        xpath=
 ${House_Address_Village}                    xpath=
@@ -62,9 +63,9 @@ ${House_Address_Provinec}                   xpath=
 ${House_Address_District}                   xpath=
 ${House_Address_SubDistrict}                xpath=
 ${House_Address_Zip_Code}                   xpath=
-${Work_Address_Use}                         xpath=
-${Work_Address_Others}                      xpath=
-${Work_Address_Office_Name}                 xpath=
+${Work_Address_Use}                         xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[10]/android.view.View
+${Work_Address_Others}                      xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[11]/android.view.View
+${Work_Address_Office_Name}                 xpath=//android.widget.Button[@resource-id='InsuredJobAddressName']
 ${Work_Address_Number}                      xpath=
 ${Work_Address_Moo}                         xpath=
 ${Work_Address_Village}                     xpath=
@@ -75,10 +76,21 @@ ${Work_Address_District}                    xpath=
 ${Work_Address_SubDistrict}                 xpath=
 ${Work_Address_Zip_Code}                    xpath=
 ${Mailing_Address}                          xpath=
-${Policy_Email}                             xpath=
-${Policy_Post}                              xpath=
+${Policy_Email}                             xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[4]/android.view.View[3]
+${Policy_Post}                              xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[4]/android.view.View[4]
 # Beneficiary Page
+${Beneficiary}                              xpath=//android.widget.Spinner[@resource-id='RelationShipId0']
+${[father]}                                 xpath=//android.widget.CheckedTextView[@text='บิดา']
+${[mother]}                                 xpath=//android.widget.CheckedTextView[@text='มารดา']
+${[child]}                                  xpath=//android.widget.CheckedTextView[@text='บุตร']
+${[old brother]}                            xpath=//android.widget.CheckedTextView[@text='พี่']
+${[brother]}                                xpath=//android.widget.CheckedTextView[@text='น้อง']
 
+${Percent}                                  xpath=//android.widget.EditText[@resource-id='Percent0']
+${Percent_100}                              100
+
+${FullName}                                 xpath=//android.widget.EditText[@resource-id='BeneficiaryFullName0']
+${FullName1}                                Test
 # Cash Back Page
 
 # FATCA Page
