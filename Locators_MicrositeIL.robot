@@ -40,18 +40,26 @@ ${Monthly_Locator}                          xpath=//hierarchy/android.widget.Fra
 
 # Personal Info Page
 ${Prefix}                                   xpath=
-${Mobile_Phone}                             xpath=//android.widget.Button[@resource-id='InsuredMobileNo']
-${Email}                                    xpath=//android.widget.Button[@resource-id='InsuredEmail']
-${Monthly_income}                           xpath=
-${Number}                                   xpath=//android.widget.Button[@resource-id='InsuredAddressNo']
-${Moo}                                      xpath=//android.widget.Button[@resource-id='InsuredAddressMoo']
-${Village}                                  xpath=//android.widget.Button[@resource-id='InsuredAddressVillageName']
-${Soi}                                      xpath=//android.widget.Button[@resource-id='InsuredAddressSoi']
-${Road}                                     xpath=//android.widget.Button[@resource-id='InsuredAddressStreet']
+${Mobile_Phone}                             xpath=//android.widget.EditText[@resource-id='InsuredMobileNo']
+${Email}                                    xpath=//android.widget.EditText[@resource-id='InsuredEmail']
+${Monthly_income}                           xpath=//android.widget.Spinner[@resource-id='InsuredAddressNo']
+${Monthly_income_< 10,000}                  xpath=//android.widget.CheckedTextView[@text='< 10,000']
+${Monthly_income_10,001 - 20000}            xpath=//android.widget.CheckedTextView[@text='10,001 - 20000']
+${Monthly_income_20,001 - 30000}            xpath=//android.widget.CheckedTextView[@text='20,001 - 30000']
+${Monthly_income_30,001 - 40000}            xpath=//android.widget.CheckedTextView[@text='30,001 - 40000']
+${Monthly_income_40,001 - 50,000}           xpath=//android.widget.CheckedTextView[@text='40,001 - 50,000']
+${Monthly_income_50,001 - 75,000}           xpath=//android.widget.CheckedTextView[@text='50,001 - 75,000']
+
+
+${Number}                                   xpath=//android.widget.EditText[@resource-id='InsuredAddressNo']
+${Moo}                                      xpath=//android.widget.EditText[@resource-id='InsuredAddressMoo']
+${Village}                                  xpath=//android.widget.EditText[@resource-id='InsuredAddressVillageName']
+${Soi}                                      xpath=//android.widget.EditText[@resource-id='InsuredAddressSoi']
+${Road}                                     xpath=//android.widget.EditText[@resource-id='InsuredAddressStreet']
 ${Provinec}                                 xpath=
 ${District}                                 xpath=
 ${SubDistrict}                              xpath=
-${Zip_Code}                                 xpath=//android.widget.Button[@resource-id='InsuredAddressPostalCode']
+${Zip_Code}                                 xpath=//android.widget.EditText[@resource-id='InsuredAddressPostalCode']
 ${House_Address_Use}                        xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[6]/android.view.View
 ${House_Address_Others}                     xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[7]/android.view.View
 ${House_Address_Number}                     xpath=
@@ -65,7 +73,7 @@ ${House_Address_SubDistrict}                xpath=
 ${House_Address_Zip_Code}                   xpath=
 ${Work_Address_Use}                         xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[10]/android.view.View
 ${Work_Address_Others}                      xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[11]/android.view.View
-${Work_Address_Office_Name}                 xpath=//android.widget.Button[@resource-id='InsuredJobAddressName']
+${Work_Address_Office_Name}                 xpath=//android.widget.EditText[@resource-id='InsuredJobAddressName']
 ${Work_Address_Number}                      xpath=
 ${Work_Address_Moo}                         xpath=
 ${Work_Address_Village}                     xpath=
@@ -93,6 +101,11 @@ ${FullName}                                 xpath=//android.widget.EditText[@res
 ${FullName1}                                Test
 # Cash Back Page
 
+
 # FATCA Page
+${Fatca_Yes}                                xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[3]/android.view.View/android.view.View[2]
 
 # Review Page
+${Consent}                                  xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[5]/android.view.View
+${Confirm_Consent}                          xpath=//android.widget.Button[@resource-id='closeModalConsent']
+${Pay To SCB Easy App}                      xpath=//android.widget.Button[@resource-id='closeModal']

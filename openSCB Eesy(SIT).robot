@@ -12,4 +12,7 @@ Open App
     Personal Info Page
     Beneficiary Page
     Cash Back Page
-    Close 
+    FATCA Page
+    Review Page
+    Close
+ 

@@ -77,8 +77,10 @@ Payment Mode Page
 
 Personal Info Page
     Sleep    5s
+    Swipe      200    500    100    0
+    Click Element            ${Monthly_income_< 10,000}
     Swipe      200    2000    100    0
-    Swipe      200    1500    100    0
+    Swipe      200    1000    100    0
     Click Element            ${Button Continue_Locator}
 Beneficiary Page
     Wait Until Element Is Visible         ${Beneficiary}
@@ -90,10 +92,22 @@ Beneficiary Page
     Click Element            ${Button Continue_Locator}
 Cash Back Page
     Sleep    2s
+    Swipe      200    1000    100    0
+    Click Element            ${Button Continue_Locator}
 
 FATCA Page
-
+    Sleep    2s
+    Swipe      200    1000    100    0
+    Click Element            ${Fatca_Yes}
+    Click Element            ${Button Continue_Locator}
 Review Page
+    Sleep    2s
+    Swipe      200    1000    100    0
+    Click Element           ${Consent}
+    Click Element           ${Confirm_Consent}
+    Swipe      200    1000    100    0
+    Click Element           ${Button Continue_Locator}
+    Click Element           ${Pay To SCB Easy App} 
 
 Close
      Close Application
