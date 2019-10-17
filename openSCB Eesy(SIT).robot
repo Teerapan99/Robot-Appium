@@ -14,5 +14,5 @@ Open App
     Cash Back Page
     FATCA Page
     Review Page
+    Payment SCB Easy
     Close
- 

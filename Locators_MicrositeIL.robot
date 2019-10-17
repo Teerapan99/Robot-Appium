@@ -5,8 +5,12 @@ Library           string
 Library           BuiltIn
 Library           AppiumLibrary
 Resource          Keywords.robot
+Library           DateTime
 
 *** Variables ***
+#Capture Page Screenshot
+${screenshot}                      screenshot/
+
 #Login
 ${Login_parth}                     xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/TextInputLayout[1]/android.widget.FrameLayout/android.widget.EditText
 ${User_data}                       sit_scblife08
@@ -42,7 +46,7 @@ ${Monthly_Locator}                          xpath=//hierarchy/android.widget.Fra
 ${Prefix}                                   xpath=
 ${Mobile_Phone}                             xpath=//android.widget.EditText[@resource-id='InsuredMobileNo']
 ${Email}                                    xpath=//android.widget.EditText[@resource-id='InsuredEmail']
-${Monthly_income}                           xpath=//android.widget.Spinner[@resource-id='InsuredAddressNo']
+${Monthly_income}                           xpath=//android.widget.Spinner[@resource-id='InsuredMonthlyIncome']
 ${Monthly_income_< 10,000}                  xpath=//android.widget.CheckedTextView[@text='< 10,000']
 ${Monthly_income_10,001 - 20000}            xpath=//android.widget.CheckedTextView[@text='10,001 - 20000']
 ${Monthly_income_20,001 - 30000}            xpath=//android.widget.CheckedTextView[@text='20,001 - 30000']
@@ -103,9 +107,15 @@ ${FullName1}                                Test
 
 
 # FATCA Page
-${Fatca_Yes}                                xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[3]/android.view.View/android.view.View[2]
+${Fatca_Yes}                                xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/*/android.view.View[3]/android.view.View/android.view.View[1]
+                                                   
+
 
 # Review Page
-${Consent}                                  xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[5]/android.view.View
+${Consent}                                  xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[4]
 ${Confirm_Consent}                          xpath=//android.widget.Button[@resource-id='closeModalConsent']
 ${Pay To SCB Easy App}                      xpath=//android.widget.Button[@resource-id='closeModal']
+
+#Payment
+${Payment_Review}                           xpath=//android.widget.TextView[@resource-id='com.scb.phone_sit_cr:id/default_button_text_view']
+${Payment_Confirm}                          xpath=//android.widget.Button[@resource-id='com.scb.phone_sit_cr:id/cc_sof_review_continue_btn']
