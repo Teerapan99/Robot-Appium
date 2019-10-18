@@ -34,7 +34,7 @@ Login To SCB Easy App SIT
 SCB Easy App SIT
     Open Application     http://localhost:4723/wd/hub     platformName=Android
     ...    platformVersion=9       deviceName=UBV7N18327001741
-    ...    automationName=uiautomator2     appPackage=com.scb.phone_sit_cr   
+    ...    automationName=uiautomator2     appPackage=com.scb.phone_sit_cr
     ...    appActivity=com.scb.phone.view.activity.splash.SplashActivity
     Clear Text                   ${Login_parth}
     Input Password               ${Login_parth}          ${User_data}
@@ -78,8 +78,8 @@ Product Landing Page
     Click Element             ${Confirm_Locator}
 Calculate Page
      Sleep    3s
-     : FOR    ${INDEX}    IN RANGE    1    4
-      \         Click Element          ${Increase_Locator}
+     # : FOR    ${INDEX}    IN RANGE    1    4
+     #  \         Click Element          ${Increase_Locator}
      Capture Page Screenshot      ${screenshot}Capture8.png
      Swipe      200    1300    100    0
      Click Element            ${Button Continue_Locator}
@@ -155,8 +155,5 @@ Payment SCB Easy
     Capture Page Screenshot      ${screenshot}Capture26.png
     Swipe      200    1000    100    0
     Click Element          ${Payment_Confirm}
-    Sleep    2S
+    Sleep    5S
     Capture Page Screenshot      ${screenshot}Capture27.png
-    Sleep    10s
-Close
-     Close Application

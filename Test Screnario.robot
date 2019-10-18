@@ -5,7 +5,6 @@ Resource    Locators_MicrositeIL.robot
 
 *** Keywords ***
 SCN1
-    SCB Easy App SIT
     Product Landing Page
     Calculate Page
     Payment Mode Page
@@ -15,4 +14,3 @@ SCN1
     FATCA Page
     Review Page
     Payment SCB Easy
-    Close
