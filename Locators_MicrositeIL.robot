@@ -15,9 +15,11 @@ ${screenshot}                      screenshot/
 ${Login_parth}                     xpath=//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/TextInputLayout[1]/android.widget.FrameLayout/android.widget.EditText
 ${User_data}                       sit_scblife08
 ${Confirm}                         xpath=//android.widget.TextView[@text="Confirm"]
+${Close_Popup}                     xpath=//android.widget.ImageView[@resource-id='com.scb.phone_sit_cr:id/iv_close_ads']
 ${Close}                           xpath=//android.widget.ImageView[@index="2"]
 ${Close_Two}                       xpath=//android.widget.ImageView[@resource-id='com.scb.phone_sit_cr:id/skip_lifestyle_tutorial_image_view']
 ${Product 12/4_Index}              xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[8]/android.widget.ImageView
+                                          
 ${Product 12/4_Home}               xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.ImageView
 ${PIN_ONE}                         xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.Button[1]
 ${PIN_TWO}                         xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.Button
@@ -108,7 +110,7 @@ ${FullName1}                                Test
 
 # FATCA Page
 ${Fatca_Yes}                                xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/*/android.view.View[3]/android.view.View/android.view.View[1]
-                                                   
+
 
 
 # Review Page
@@ -119,3 +121,4 @@ ${Pay To SCB Easy App}                      xpath=//android.widget.Button[@resou
 #Payment
 ${Payment_Review}                           xpath=//android.widget.TextView[@resource-id='com.scb.phone_sit_cr:id/default_button_text_view']
 ${Payment_Confirm}                          xpath=//android.widget.Button[@resource-id='com.scb.phone_sit_cr:id/cc_sof_review_continue_btn']
+${Cash}                                     xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[1]
