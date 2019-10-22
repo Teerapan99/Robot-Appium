@@ -1,2 +1,2 @@
-# Robot-Appium
-Robot Framework &amp; Appium
+# Robot-App-UAT-SCB-Easy
+Robot framework+Appium
