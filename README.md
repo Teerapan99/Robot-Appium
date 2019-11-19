@@ -1,7 +1,8 @@
 # Robot-App-UAT-SCB-Easy
-Robot framework+Appium
+Robot framework+Appium และการหา Activity
 
-การหา activity
+
+การหา activity  ผ่าน Terminal
 
 adb shell
 
