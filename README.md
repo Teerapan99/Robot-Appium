@@ -4,6 +4,10 @@ Robot framework+Appium และการหา Activity
 
 การหา activity  ผ่าน Terminal
 
-adb shell
+For Mac/Linux:
 
-dumpsys window windows | grep -E 'mCurrentFocus'
+     adb shell dumpsys window | grep -E 'mCurrentFocus' 
+
+For Windows:
+
+     adb shell dumpsys window | find "mCurrentFocus"
