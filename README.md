@@ -10,4 +10,9 @@ For Mac/Linux:
 
 For Windows:
 
-     adb shell dumpsys window | find "mCurrentFocus"
+     adb shell dumpsys window | find "mCurrentFocus"\
+     
+####OR####
+
+     1. adb shell
+     2. dumpsys window | grep -E 'mCurrentFocus|mFocusedApp'
